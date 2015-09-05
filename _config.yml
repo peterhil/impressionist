@@ -1,5 +1,7 @@
-source: src
 destination: public
+exclude:
+    - .gitkeep
+    - Gemfile*
 
 highlighter: true
 permalink: "/:title"
