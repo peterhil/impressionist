@@ -1,3 +1,6 @@
+source: src
+destination: public
+
 highlighter: true
 permalink: "/:title"
 
