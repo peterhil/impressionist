@@ -1,3 +1,11 @@
+GIT
+  remote: git://github.com/slim-template/slim.git
+  revision: 9152737d75a38d1ff655f2fd32a3234dab62f278
+  specs:
+    slim (3.0.6)
+      temple (~> 0.7.6)
+      tilt (>= 1.3.3, < 2.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -27,6 +35,8 @@ GEM
     execjs (2.6.0)
     fast-stemmer (1.0.2)
     ffi (1.9.10)
+    haml (4.0.7)
+      tilt
     hitimes (1.2.2)
     jekyll (2.5.3)
       classifier-reborn (~> 2.0)
@@ -46,9 +56,15 @@ GEM
     jekyll-coffeescript (1.0.1)
       coffee-script (~> 2.2)
     jekyll-gist (1.3.4)
+    jekyll-haml (0.1.2)
+      haml (>= 3.0.0)
+      jekyll (>= 0.10.0)
     jekyll-paginate (1.1.0)
     jekyll-sass-converter (1.3.0)
       sass (~> 3.2)
+    jekyll-slim (0.8.2)
+      jekyll (>= 0.10.0)
+      slim
     jekyll-watch (1.2.1)
       listen (~> 2.7)
     kramdown (1.8.0)
@@ -58,7 +74,7 @@ GEM
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9)
     mercenary (0.3.5)
-    multi_json (1.7.8)
+    multi_json (1.7.9)
     parslet (1.5.0)
       blankslate (~> 2.0)
     posix-spawn (0.3.11)
@@ -71,6 +87,8 @@ GEM
     redcarpet (3.3.2)
     safe_yaml (1.0.4)
     sass (3.4.18)
+    temple (0.7.6)
+    tilt (2.0.1)
     timers (4.0.4)
       hitimes
     toml (0.1.2)
@@ -81,9 +99,12 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  compass
-  jekyll
-  multi_json (= 1.7.8)
+  compass (~> 1.0.3)
+  jekyll (~> 2.5.3)
+  jekyll-haml (~> 0.1.2)
+  jekyll-slim
+  multi_json (~> 1.7.8)
+  slim!
 
 BUNDLED WITH
    1.10.6
