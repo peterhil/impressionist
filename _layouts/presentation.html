@@ -15,20 +15,10 @@
         <div class="hint">
             <p>Use a spacebar or arrow keys to navigate</p>
         </div>
-        <script>
-         if ("ontouchstart" in document.documentElement) {
-             document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
-         }
-        </script>
         <script src="dist/impress.js/js/impress.min.js"></script>
+        <script src="js/presentation.js"></script>
         <script>
          impress().init();
-         document.body.addEventListener('keyup', function(event){
-             if (event.keyCode == 27) {
-                 console.log('Overview');
-                 document.location.hash = '#/overview';
-             }
-         });
         </script>
         </div>
     </body>
